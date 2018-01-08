@@ -1,0 +1,167 @@
+﻿# Beta 0.1.6
+
+add_namespace = ww1_armistice
+
+
+
+# I'm going to have to rework the surrender entirely. All nations will have their own, Seperate peace just like irl.
+#____________________________________________________________
+
+country_event = { #Germany surrenders
+	id = ww1_armistice.1
+	title = ww1_armistice.1.t
+	desc = ww1_armistice.1.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GER
+		FRA = { has_war_with = GER }
+		GER = { surrender_progress > 0.70 }
+		date < 1920.01.01
+	}
+	
+	option = {	#The war is over
+		name = ww1_armistice.1.o1
+		GER = {	annex_country = { target = GER } }
+		FRA  = { transfer_state = 28 }
+		BAV  = { transfer_state = 54 }
+		BAV  = { transfer_state = 53 }
+		BAV  = { transfer_state = 52 }
+		BAV  = { add_popularity = { ideology = communism popularity = 0.8 } }
+		BAV  = { set_politics = { ruling_party = communism elections_allowed = yes } }
+		DEN  = { transfer_state = 751 }
+		MEM  = { transfer_state = 188 }
+		CZE = { transfer_state = 69 }
+		CZE = { transfer_state = 74 }
+		end_puppet = POL
+		end_puppet = LIT
+		end_puppet = EST
+		end_puppet = AUH
+
+	}
+}
+
+country_event = { #Austria-Hungary surrenders - Armistice of Villa Giusti
+	id = ww1_armistice.2
+	title = ww1_armistice.2.t
+	desc = ww1_armistice.2.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AUH
+		FRA = { has_war_with = AUH }
+		AUH = { surrender_progress > 0.70 }
+		date < 1920.01.01
+	}
+	
+	option = {	#The war is over
+		name = ww1_armistice.2.o1
+		AUH = {	annex_country = { target = AUH } }
+		SLV  = { 
+		transfer_state = 736 
+		transfer_state = 102
+		transfer_state = 109
+		transfer_state = 103
+		transfer_state = 104
+		}
+		CZE = { 
+		transfer_state = 9
+		transfer_state = 75
+		transfer_state = 72
+		}
+		HUN = { 
+		transfer_state = 70
+		transfer_state = 664
+		transfer_state = 71
+		transfer_state = 73
+		transfer_state = 76
+		transfer_state = 154
+		transfer_state = 43
+		transfer_state = 155
+		transfer_state = 45
+		transfer_state = 84
+		transfer_state = 83
+		transfer_state = 45
+		}
+		RWK = { 
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		}
+		GER = {
+		transfer_state = 69
+		transfer_state = 74
+		}
+
+		RWK = {
+		transfer_state = 88
+		transfer_state = 89
+		transfer_state = 91
+		}
+
+		BNT = {
+		transfer_state = 82
+		}
+
+		KOM = {
+		transfer_state = 785
+		}
+
+		LEM = {
+		transfer_state = 786
+		}
+
+	}
+}
+
+country_event = { #Ottoman Empire surrenders - Make sure they abide by the treaty of sevres, So that they can undo it in the Greco-Turkish war.
+	id = ww1_armistice.3
+	title = ww1_armistice.3.t
+	desc = ww1_armistice.3.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		FRA = { has_war_with = TUR }
+		TUR = { surrender_progress > 0.70 }
+		date < 1920.01.01
+	}
+	
+	option = {	#The war is over
+		name = ww1_armistice.3.o1
+		TUR = {	annex_country = { target = TUR } }
+		GRE = {
+		transfer_state = 339
+		}
+		340 = { set_demilitarized_zone = yes }
+		#Todo: Add states to be transferred
+	}
+}
+
+country_event = { #Bulgaria surrenders
+	id = ww1_armistice.4
+	title = ww1_armistice.4.t
+	desc = ww1_armistice.4.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TUR
+		FRA = { has_war_with = TUR }
+		TUR = { surrender_progress > 0.70 }
+		date < 1920.01.01
+	}
+	
+	option = {	#The war is over
+		name = ww1_armistice.4.o1
+		BUL = {	annex_country = { target = BUL } }
+		#Todo: Add states to be transferred
+	}
+}
+
+#That's going to be the only scripted ones. It's possible that there will be other central powers, But i'll leave the game to decide their fate dynamically.
+
+#____________________________________________________________

@@ -1,0 +1,104 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Infantry Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
+
+division_template = {
+	name = "Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+###################################################################
+
+
+units = {
+
+#285 303 369 3342 3359 7377 11293 11303
+	division= { 
+			name = "Irish Insurgents"
+			location=285 # Dublin
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=303
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=369
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=3342
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=3359
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=7377
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=11293
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=11303
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=9321
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	division= { 
+			name = "Irish Insurgents"
+			location=9255
+			division_template="Infantry Brigade"
+			start_experience_factor=0
+			}
+	
+	}
+air_wings = { 
+	}
+instant_effect = {
+	}
