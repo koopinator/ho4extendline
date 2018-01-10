@@ -1,0 +1,27 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Inuit Militia"
+	regiments = {
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 1
+}
+
+###################################################################
+
+units = {
+	division= { 
+			name = "Inuit Militia"
+			location = 12512
+			division_template="Inuit Militia"
+			start_experience_factor=0.1
+			}
+	division= { 
+			name = "Inuit Militia"
+			location = 13066
+			division_template="Inuit Militia"
+			start_experience_factor=0.1
+			}
+	}
