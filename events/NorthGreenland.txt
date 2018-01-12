@@ -1,3 +1,7 @@
+﻿###########################
+# Persian Events
+###########################
+
 add_namespace = northgreenland
 
 country_event = { #Denmark is asked wether or not to annex northern greenland
@@ -42,13 +46,13 @@ country_event = { #North Greenland is informed about denmark's decision.
 	}
 	option = {	#No, We must protect our finance.
 		name = northgreenland.2.o2
-		DEN = { end_puppet = NGL }
+		end_puppet = NGL
 		DEN = { country_event = { days = 1 id = northgreenland.3 } }
 		ai_chance = { factor = 10 }
 	}
 	option = {	#No, We must protect the inuit.
 		name = northgreenland.2.o3
-		DEN = { end_puppet = NGL }
+		end_puppet = NGL
 		add_popularity = { ideology = nationalist popularity = 0.3 }
 		set_politics = { ruling_party = nationalist elections_allowed = no }
 		load_oob = NGL_Revolt
@@ -90,6 +94,75 @@ country_event = { #Denmark is informed of a inuit inspired coup
 		declare_war_on = { target = NGL }
 	}
 	option = {	#Let them
-		name = northgreenland.4.o1
+		name = northgreenland.4.o2
 	}
 }
+
+country_event = { #Britain decides to help denmark quell the greenland revolt.
+	id = northgreenland.5
+	title = northgreenland.5.t
+	desc = northgreenland.5.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ENG
+		DEN = { has_war_with = NGL }
+		date > 1912.01.01
+		date < 1912.12.01
+	}
+	
+	option = {	#The war has begun
+		name = northgreenland.5.o1
+		declare_war_on = { target = NGL }
+	}
+	option = {	#no
+		name = northgreenland.5.o2
+	}
+}
+
+country_event = { #After 2 years of fighting, Denmark requests peace.
+	id = northgreenland.6
+	title = northgreenland.6.t
+	desc = northgreenland.6.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DEN
+		DEN = { has_war_with = NGL }
+		date > 1913.01.01
+		date < 1913.12.01
+	}
+	
+	option = {	#The war has ended
+		name = northgreenland.6.o1
+		white_peace = NGL
+		ENG = { white_peace = NGL }
+	}
+	option = {	#no
+		name = northgreenland.6.o2
+	}
+}
+
+country_event = { #If NGL gains control of south greenland in addition to north greenland, they get volunteers.
+	id = northgreenland.7
+	title = northgreenland.7.t
+	desc = northgreenland.7.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NGL
+		DEN = { has_war_with = NGL }
+		has_full_control_of_state = 101
+		
+	}
+	
+	option = {	#The war has ended
+		name = northgreenland.7.o1
+		NGL = { transfer_state = 101 }
+		load_oob = NGL_Revolt2
+	}
+	
+

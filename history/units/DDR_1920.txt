@@ -20,6 +20,12 @@ units = {
 			start_experience_factor=0
 			}
 	division= { 
+			name = "Spartacist Uprising"
+			location = 6521
+			division_template="Militia"
+			start_experience_factor=0
+			}
+	division= { 
 			name = "Rebel militia"
 			location = 3326
 			division_template="Militia"

@@ -1691,6 +1691,25 @@
  ww1_russia.31.d:0 "The People in karelia have revolted against us."
  ww1_russia.31.o1:0 "Ok"
 
+ #March on rome
+
+ marchonrome.1.t:0 "March on Rome"
+ marchonrome.1.d:0 "Benito Mussolini has a major request for the Italian government - The restoration of italian society! The [Root.GetAdjective] people have been subjected too long to the incompetent rule of [Root.GetRulingParty]! They claim to represent the people, but fail to even keep our streets in order! We are faced with a choice - Either empower the fascists, Or face civil war."
+ marchonrome.1.o1:0 "Alright, We'll give in." 
+ marchonrome.1.o2:0 "We're not afraid him."
+ marchonrome.4.t:0 "Call for change in government"
+ marchonrome.4.d:0 "For the past weeks, We have fought a bitter war against Mussolini and his blackshirts. However, The Communists and Democrats within our government have accused us of hypocrisy. We let a monarch reign, How can we claim to truly represent democracy? We could gain support if we were to either move towards democracy, Or move towards communism."
+ marchonrome.4.o1:0 "Keep the monarchy"
+ marchonrome.4.o2:0 "Death to the King!"
+ marchonrome.4.o3:0 "Support communism"
+ marchonrome.5.t:0 "Sicilian revolt"
+ marchonrome.5.d:0 "In response to our rejection of communism, The communists have taken matters in their own hands, And have declared an independent republic of sicily. It is our choice wether or not to fight them or not."
+ marchonrome.5.o1:0 "Let them be."
+ marchonrome.5.o2:0 "Oppose this treachery!"
+ marchonrome.6.t:0 "Sicilian revolt"
+ marchonrome.6.d:0 "The communists have declared an independent sicily."
+ marchonrome.6.o1:0 "This won't save them."
+
 
 
  # Do not change
@@ -1733,7 +1752,7 @@
  ww1_russoturkish.5.o1:0 "Join the central powers!"
  ww1_russoturkish.5.o2:0 "Maybe later."
 
- #North Greenland Annexation of 1911
+ #North Greenland Annexation of 1911 + Althistory inuit revolt
 
  northgreenland.1.t:0 "North Greenland Annexation proposal"
  northgreenland.1.d:0 "North Greenland, Currently under the administration of the Royal Greenland Trading Department, Is a subject of contention among our elites. Some have proposed that we abolish this old trading company, And nationalize north greenland. Others have suggested that we keep north greenland as a territory of the markets."
@@ -1751,5 +1770,16 @@
  northgreenland.4.d:0 "In one of the most dramatic turns in Danish history, The North Greenlandic Government has been deposed by a group of furious Inuit. The Inuit believe that the annexation of North greenland is the last straw in centuries of infringements into inuit territory. They've raised a small army out of Inuit militias, Ready to protect their territories. Some danes have suggested that we let the Inuit remain independent, As they don't control very valuable territory. Others have stressed that denmark must continue to preserve danish territory after the loss of territory in the Second Schleswig War."
  northgreenland.4.o1:0 "We choose war!"
  northgreenland.4.o2:0 "Let the Inuit be."
+ northgreenland.5.t:0 "Threats to the balance of power"
+ northgreenland.5.d:0 "For the past year or so, The inuit have successfully fought against danish troops. If the revolt is to succeed, It may inspire further rebellions within other empires, Including our own. It is clear that we must act to crush this rebellion"
+ northgreenland.5.o1:0 "Let's crush the mutineers!"
+ northgreenland.5.o2:0 "We have other concerns."
+ northgreenland.6.t:0 "Peace Proposal"
+ northgreenland.6.d:0 "Despite our best efforts, We have failed to defeat the Greenlandic rebels. We should give up, And end this eternal war."
+ northgreenland.6.o1:0 "The War is over."
+ northgreenland.6.o2:0 "Never"
+ northgreenland.7.t:0 "More troops"
+ northgreenland.7.d:0 "More troops have joined our cause."
+ northgreenland.7.o1:0 "Ok"
 
 

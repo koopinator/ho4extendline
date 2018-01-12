@@ -17,6 +17,6 @@ ideas = {
 			
 			modifier = {
 				ai_focus_aggressive_factor = 2.0
-				offence = 50.0
+				offence = 30.0
 			}
 		}

@@ -12,6 +12,7 @@ state={
 		victory_points={ 4159 10 }
 		owner=ITA
 		add_core_of=ITA
+		add_core_of=SIY
 		1936.1.1={ 
 			owner=ITA
 			add_core_of=ITA

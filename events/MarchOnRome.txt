@@ -47,4 +47,129 @@ country_event = {
 			}
 	}
 }
+
+country_event = { #Democrats get a buff
+	id = marchonrome.2
+	title = marchonrome.2.t
+	desc = marchonrome.2.d
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1930.1.01
+		original_tag = ITA
+		has_government = democratic
+		has_civil_war = yes
+	}
+	
+	option = {	#The war has begun
+		name = marchonrome.2.o1
+		add_timed_idea = { idea = marchonrome days = 300 }
+			}
+	}
+country_event = { #Fascists get a buff
+	id = marchonrome.3
+	title = marchonrome.3.t
+	desc = marchonrome.3.d
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1930.1.01
+		original_tag = ITA
+		has_government = fascism
+		has_civil_war = yes
+	}
+	
+	option = {	#The war has begun
+		name = marchonrome.3.o1
+		add_timed_idea = { idea = marchonrome days = 300 }
+			}
+	}
+country_event = { #Italy is asked to gain support by communists or democrats, this will give them extra manpower.
+	id = marchonrome.4
+	title = marchonrome.4.t
+	desc = marchonrome.4.d
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1930.1.01
+		original_tag = ITA
+		has_government = democratic
+		has_civil_war = yes
+	}
+	
+	option = {	#Keep the monarchy
+		name = marchonrome.4.o1
+		country_event = { days = 2 id = marchonrome.5 }
+			}
+	option = {	#Death to Monarchy!
+		name = marchonrome.4.o2
+		kill_country_leader = yes
+		load_oob = ITA_democrat
+		country_event = { days = 2 id = marchonrome.5 }
+			}
+	option = {	#Support Communism
+		name = marchonrome.4.o3
+		load_oob = SIY_1920
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.70
+		}
+			}
+	}
+country_event = { #Sicily revolts if communism does not prevail.
+	id = marchonrome.5
+	title = marchonrome.5.t
+	desc = marchonrome.5.d
+	is_triggered_only = yes
+	
+	trigger = {
+		date < 1930.1.01
+		original_tag = ITA
+		has_government = democratic
+		has_civil_war = yes
+		controls_state = 115
+	}
+
+	immediate = { 
+	SIY = { transfer_state = 115 }
+	SIY = { load_oob = SIY_1920 }
+	}
+	
+	option = {	#Ally with them
+		name = marchonrome.5.o1
+		SIY = { add_timed_idea = { idea = marchonrome days = 125 } }
+		give_military_access = SIY
+		SIY = { give_military_access = ITA }
+		}
+	option = {	#Fight them
+		name = marchonrome.5.o2
+		SIY = { add_timed_idea = { idea = marchonrome days = 125 } }
+		declare_war_on = { target = SIY type = annex_everything }
+		}
+	}
+country_event = { #Mussolini is informed of Sicily's independence
+	id = marchonrome.6
+	title = marchonrome.6.t
+	desc = marchonrome.6.d
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1930.1.01
+		original_tag = ITA
+		has_government = fascism
+		has_civil_war = yes
+		country_exists = SIY
+	}
+	
+	option = {	#Fight them
+		name = marchonrome.5.o1
+		declare_war_on = { target = SIY type = annex_everything }
+		}
+	}
 #____________________________________________________________
