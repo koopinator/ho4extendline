@@ -1,0 +1,19 @@
+state={
+	id=791
+	name="STATE_791"
+	manpower = 1000000
+	state_category=wasteland
+	provinces= { 1960 5060 8052 10857 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=DAR
+		add_core_of=ENG
+		add_core_of=DAR
+		victory_points={ 8052 1 }
+		1919.1.1={ 
+			owner=ENG
+			add_core_of=FRA
+		}
+	}

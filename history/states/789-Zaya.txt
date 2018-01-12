@@ -1,0 +1,20 @@
+state={
+	id=789
+	name="STATE_789"
+	manpower = 100000
+	state_category=wasteland
+	provinces= { 1207 1152 4933 7908 8046 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=ZAY
+		add_core_of=ZAY
+		add_core_of=MOR
+		add_core_of=FRA
+		victory_points={ 1207 1 }
+		1919.1.1={ 
+			owner=FRA
+			add_core_of=FRA
+		}
+	}

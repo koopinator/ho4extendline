@@ -1,0 +1,19 @@
+state={
+	id=790
+	name="STATE_790"
+	manpower = 100000
+	state_category=wasteland
+	provinces= { 8094 1905 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=DRV
+		add_core_of=ENG
+		add_core_of=DRV
+		victory_points={ 1905 1 }
+		1919.1.1={ 
+			owner=ENG
+			add_core_of=FRA
+		}
+	}

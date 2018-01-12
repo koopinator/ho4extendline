@@ -1,0 +1,49 @@
+﻿
+add_namespace = dervia
+
+
+# When France ends up at war with germany, dervia is asked if they want to aid germany.
+#____________________________________________________________
+country_event = {
+	id = dervia.1
+	title = dervia.1.t
+	desc = dervia.1.d
+	
+	fire_only_once=yes
+
+	trigger = {
+		tag = DRV
+		date < 1920.3.01
+		GER = { has_war_with = ENG }
+	}
+
+	option = {
+		name = dervia.1.o1 #Accept
+		ai_chance = { factor = 100 }
+		GER = { country_event = { days = 1 id = dervia.2 } }
+	}
+
+	option = {
+		name = dervia.1.o2 #Refuse
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Germany receives the Zayan request for material support.
+	id = dervia.2
+	title = dervia.2.t
+	desc = dervia.2.d
+	is_triggered_only = yes
+	
+	option = {	#Send support
+		name = dervia.2.o1
+		send_equipment = { target = DRV type = infantry_equipment amount = 2500 }
+		DRV = { declare_war_on = { target = FRA type = annex_everything } }
+		ai_chance = { factor = 100 }
+			}
+	option = {	#It is not in our interests
+		name = dervia.2.o2
+		ai_chance = { factor = 0 }
+			}
+		}
+#____________________________________________________________

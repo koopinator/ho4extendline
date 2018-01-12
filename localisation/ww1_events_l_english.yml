@@ -1782,4 +1782,26 @@
  northgreenland.7.d:0 "More troops have joined our cause."
  northgreenland.7.o1:0 "Ok"
 
+ #Zayan war
+
+ zaya.1.t:0 "Zaian war"
+ zaya.1.d:0 "It has come to our attention that the German empire has started a war against the French. If we could get sufficient German support, We might be able to drive the french out of morroco."
+ zaya.1.o1:0 "Seems like a good idea."
+ zaya.1.o2:0 "No"
+ zaya.2.t:0 "The Zayans request our aid"
+ zaya.2.d:0 "The Zayan confederation, Who are fearful of french expansionism, Have requested military supplies from us - If we support them, They will enter the war on our side."
+ zaya.2.o1:0 "Send support"
+ zaya.2.o2:0 "It is not in our interests"
+
+ #Dervian war - Literally just copying the last and changing it a bit
+
+ dervia.1.t:0 "German aid"
+ dervia.1.d:0 "It has come to our attention that the German empire has started a war against the British. If we could get sufficient German support, We might be able to drive the Brits out of Somalia."
+ dervia.1.o1:0 "Seems like a good idea."
+ dervia.1.o2:0 "No"
+ dervia.2.t:0 "The Dervish request our aid"
+ dervia.2.d:0 "The Dervish State, Who are fearful of British expansionism, Have requested military supplies from us - If we support them, They will enter the war on our side."
+ dervia.2.o1:0 "Send support"
+ dervia.2.o2:0 "It is not in our interests"
+
 

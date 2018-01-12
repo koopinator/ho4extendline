@@ -1,0 +1,50 @@
+﻿
+add_namespace = zaya
+
+
+# When France ends up at war with germany, Zaya is asked if they want to aid germany.
+#____________________________________________________________
+country_event = {
+	id = zaya.1
+	title = zaya.1.t
+	desc = zaya.1.d
+	
+	fire_only_once=yes
+
+	trigger = {
+		tag = ZAY
+		date < 1920.3.01
+		GER = { has_war_with = FRA }
+	}
+
+	option = {
+		name = zaya.1.o1 #Accept
+		ai_chance = { factor = 100 }
+		GER = { country_event = { days = 1 id = zaya.2 } }
+	}
+
+	option = {
+		name = zaya.1.o2 #Refuse
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #Germany receives the Zayan request for material support.
+	id = zaya.2
+	title = zaya.2.t
+	desc = zaya.2.d
+	is_triggered_only = yes
+	
+	option = {	#Send support
+		name = zaya.2.o1
+		send_equipment = { target = ZAY type = infantry_equipment amount = 2500 }
+		ZAY = { declare_war_on = { target = FRA type = annex_everything } }
+		add_to_faction = ZAY
+		ai_chance = { factor = 100 }
+			}
+	option = {	#It is not in our interests
+		name = zaya.2.o2
+		ai_chance = { factor = 0 }
+			}
+		}
+#____________________________________________________________
