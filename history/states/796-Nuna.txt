@@ -1,0 +1,15 @@
+state={
+	id=796
+	name="STATE_796"
+	manpower = 150000
+	state_category=wasteland
+	provinces= { 7950 12707 2001 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=NUN
+		add_core_of=NUN
+		add_core_of=FRA
+		victory_points={ 12707 1 }
+	}

@@ -1,0 +1,14 @@
+state={
+	id=793
+	name="STATE_793"
+	manpower = 250000
+	state_category=rural
+	provinces= { 10089 4591 4017 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=TUR
+		add_core_of=TUR
+		victory_points={ 10089 2 }
+	}

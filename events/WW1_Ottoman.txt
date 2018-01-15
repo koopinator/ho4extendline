@@ -30,6 +30,30 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = ww1_ottoman.22
+	title = "Karak Revolt"
+	desc = "Qadr Majali has led the Karakians in revolt"
+
+	fire_only_once = yes
+
+	trigger = {
+		TAG = TUR
+		date > 1910.10.1
+		date < 1910.11.1
+	}
+	
+	immediate = {
+	KRK = { transfer_state = 793 }
+	KRK = { load_oob = KRK_1910 }
+	}
+	
+	option = {
+		name = "Organize the Repression"
+		declare_war_on = { target = KRK type = annex_everything }
+	}
+}
+
 # When Ottoman is asked to join the Central Powers 
 #____________________________________________________________
 country_event = {

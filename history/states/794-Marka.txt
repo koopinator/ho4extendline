@@ -1,0 +1,15 @@
+state={
+	id=794
+	name="STATE_794"
+	manpower = 50000
+	state_category=wasteland
+	provinces= { 12838 2044 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=MRK
+		add_core_of=MRK
+		add_core_of=FRA
+		victory_points={ 12838 1 }
+	}

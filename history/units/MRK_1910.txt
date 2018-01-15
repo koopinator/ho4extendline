@@ -1,0 +1,40 @@
+﻿
+###################################################################
+
+division_template = {
+	name = "Infantry Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+###################################################################
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "MRK" } requested_factories = 1 progress = 0.5 efficiency = 50}
+}
+
+###################################################################
+
+units = {
+	division= { 
+			name = "Infantry Brigade"
+			location=12838
+			division_template="Infantry Brigade"
+			start_experience_factor=0.1
+			}
+	division= { 
+			name = "Infantry Brigade"
+			location=12838
+			division_template="Infantry Brigade"
+			start_experience_factor=0.1
+			}
+	division= { 
+			name = "Infantry Brigade"
+			location=2044
+			division_template="Infantry Brigade"
+			start_experience_factor=0.1
+			}
+	}
+
+###################################################################

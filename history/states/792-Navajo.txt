@@ -1,0 +1,15 @@
+state={
+	id=792
+	name="STATE_792"
+	manpower = 173000
+	state_category=wasteland
+	provinces= { 10573 10645 7999 7818 }
+	resources={
+		wood=0
+		}
+	history={
+		owner=NAV
+		add_core_of=NAV
+		add_core_of=USA
+		victory_points={ 10573 1 }
+	}
