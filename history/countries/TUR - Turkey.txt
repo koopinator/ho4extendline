@@ -15,7 +15,6 @@ set_convoys = 100
 
 #puppet = YEM
 
-
 #-------------------------------------------------------
 
 #POLITICS & ARMY
@@ -70,6 +69,7 @@ create_navy_leader={  name = "Arif Paşa" id=90097 portrait_path="gfx/hoi4tgw_po
 
 1910.1.1 = {
 	oob = "TUR_1910"
+	declare_war_on = { target = DRZ type = annex_everything }
 
 	#-------------------------------------------------------
 	#							NF
