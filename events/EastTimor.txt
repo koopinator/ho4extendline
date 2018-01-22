@@ -1,0 +1,27 @@
+﻿
+add_namespace = easttimor
+
+
+# East timorese rebellion of 1911
+#____________________________________________________________
+country_event = {
+	id = easttimor.1
+	title = easttimor.1.t
+	desc = easttimor.1.d
+	
+	fire_only_once=yes
+
+	trigger = {
+		tag = POR
+		date > 1911.10.01
+		date < 1912.10.01
+	}
+
+	option = {
+		name = easttimor.1.o1 #The war has begun
+		ETI = { transfer_state = 801 }
+		ETI = { load_oob = ETI_1911 }
+		ETI = { declare_war_on = { target = POR } }
+	}
+}
+#____________________________________________________________

@@ -1,0 +1,13 @@
+state={
+	id=797
+	name="STATE_797"
+	manpower = 607919
+	state_category=town
+	provinces= { 1550 7590 12347 }
+	resources={
+		steel=10
+		}
+	history={
+		owner=CUB
+		add_core_of=CUB
+	}

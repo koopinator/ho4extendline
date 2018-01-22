@@ -47,6 +47,7 @@ create_navy_leader={  name = "de Azevedo Coutinho V." id=70025 portrait_path="gf
 
 1910.1.1 = {
 	oob = "POR_1910"
+	puppet = KON
 
 	#-------------------------------------------------------
 	#							NF

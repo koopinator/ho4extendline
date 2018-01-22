@@ -180,4 +180,7 @@ KRK = "countries/Karak.txt"
 MRK = "countries/Marka.txt"
 BOB = "countries/Bobo.txt"
 NUN = "countries/Nuna.txt"
-
+DRZ = "countries/Druze.txt"
+BWA = "countries/Bwa.txt"
+LEL = "countries/Lele.txt"
+KON = "countries/Kongo.txt"

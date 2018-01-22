@@ -365,4 +365,10 @@
  NGL_DEN:0 "North Greenland"
  NGL_DEN_DEF:0 "North Greenland"
  NGL_DEN_ADJ:0 "North Greenlandic"
+ DRZ_TUR:0 "Druze Protectorate"
+ DRZ_TUR_DEF:0 "The Druze Protectorate"
+ DRZ_TUR_ADJ:0 "Druze"
+ JBS_GRE:0 "Ghassanid Kingdom"
+ JBS_GRE_DEF:0 "The Ghassanid Kingdom"
+ JBS_GRE_ADJ:0 "Ghassanid"
  

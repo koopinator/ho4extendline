@@ -1810,4 +1810,26 @@
  navajo.1.d:0 "It appears that several Navajese americans, Polk and Posey have conspired against us. We'll be facing the entire Navajo nation."
  navajo.1.o1:0 "The war has begun."
 
+ #Volta Bani war
 
+ voltabani.1.t:0 "The Volta Bani war"
+ voltabani.1.d:0 "It appears that the french have tried to conscript us into their armies. This is the moment we've been waiting for in the past few years. If they must conscript us, Then they are vulnerable, And we might just be able to get true independence from france. We've already prepared for this, And several other tribes will join our cause."
+ voltabani.1.o1:0 "The war has begun"
+
+ #Kongo Revolt
+
+ kongo.1.t:0 "Kongo Revolt"
+ kongo.1.d:0 "With Portugal on the verge of joining the allies, Various German officials have stated their willingness to back a Kongolese revolt against Portugal. Our people, as well as the Kongolese elite are clearly unsatisfied with Portugese rule. /n /n /n However, We must be wary when making such a decision. Although we know the position of various german officials, We aren't certain wether or not Germany would back such a revolt, As that may risk portugal's early entry into the war. It might also make us lose what little independence we still have."
+ kongo.1.o1:0 "We should revolt"
+ kongo.1.o2:0 "We should not revolt"
+ kongo.2.t:0 "Kongo Revolt"
+ kongo.2.d:0 "The Kingdom of Kongo has stated their willingness to fight against the Portugese if we send them the necessary supplies. However, This might not prove to be to smart of a decision, As it might draw portugal in the war on the allied side. However, It's already likely that portugal will join the allies sooner or later, So this could work as a pre-emptive strike. Also, If we don't send aid they will likely be annexed by portugal, And we'll lose our only chance to get them on our side."
+ kongo.2.o1:0 "We should back the revolt"
+ kongo.2.o2:0 "We should not back the revolt"
+ kongo.3.t:0 "The Kongo Conspiracy"
+ kongo.3.d:0 "It appears that the Kingdom of Kongo recently ended some negotiations with germany to revolt against portugese rule. However, Germany ended up not supporting Kongo to maintain our neutrality. The Fact that Kongo made such a deal should not be taken lightly, And various portugese officials have suggested that we should finally put an end to this ancient African kingdom."
+ kongo.3.o1:0 "Let's annex them!"
+ kongo.3.o2:0 "Turn a blind eye"
+ kongo.4.t:0 "Annexation bill"
+ kongo.4.d:0 "To our dismay, Portugal has decided to put an end to the Kingdom of Kongo in response to our rebellious behavior. If only germany had supported us - If only."
+ kongo.4.o1:0 "The Kingdom has ended."

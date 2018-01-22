@@ -1,0 +1,14 @@
+state={
+	id=798
+	name="STATE_798"
+	manpower = 300000
+	state_category=wasteland
+	provinces= { 1975 2056 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=BWA
+		add_core_of=BWA
+		add_core_of=FRA
+	}

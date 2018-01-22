@@ -1,0 +1,97 @@
+﻿###########################
+# kongololoiese Events
+###########################
+
+add_namespace = kongo
+
+country_event = { #Kongo revolt
+	id = kongo.1
+	title = kongo.1.t
+	desc = kongo.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KON
+		GER = { has_war_with = FRA }
+		GER = { NOT = { has_war_with = POR } }
+		country_exists = POR
+		country_exists = KON
+		KON = { is_puppet_of = POR }
+	}
+	
+	option = {	#We should revolt
+		name = kongo.1.o1
+		ai_chance = { factor = 80 }
+		GER = { country_event = { days = 2 id = kongo.2 } }
+	}
+	option = {	#We should not revolt
+		name = kongo.1.o2
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = { #German support
+	id = kongo.2
+	title = kongo.2.t
+	desc = kongo.2.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = GER
+	}
+	
+	option = {	#The war has begun
+		name = kongo.2.o1
+		ai_chance = { factor = 99 }
+		POR = { end_puppet = KON }
+		send_equipment = { target = KON type = infantry_equipment amount = 2500 }
+		KON = { declare_war_on = { target = POR type = annex_everything } }
+	}
+	option = {	#The war has not begun
+		name = kongo.2.o2
+		ai_chance = { factor = 1 }
+		POR = { country_event = { days = 1 id = kongo.3 } }
+	}
+}
+
+country_event = { #Portugal discovers the plot
+	id = kongo.3
+	title = kongo.3.t
+	desc = kongo.3.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = POR
+	}
+	
+	option = {	#Annex
+		name = kongo.3.o1
+		ai_chance = { factor = 50 }
+		KON = { country_event = { days = 1 id = kongo.4 } }
+	}
+	option = {	#Do not annex
+		name = kongo.3.o2
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = { #Kongo informed of game over
+	id = kongo.4
+	title = kongo.4.t
+	desc = kongo.4.d
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = KON
+	}
+	
+	option = {	#Ded
+		name = kongo.4.o1
+		POR = { annex_country = { target = KON } }
+	}
+}
+

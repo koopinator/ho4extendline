@@ -1,0 +1,36 @@
+﻿
+add_namespace = voltabani
+
+
+# The Volti bani make an agreement to rebel against france. They soon elect a leader.
+#____________________________________________________________
+country_event = {
+	id = voltabani.1
+	title = voltabani.1.t
+	desc = voltabani.1.d
+	
+	fire_only_once=yes
+
+	trigger = {
+		tag = BOB
+		date > 1915.11.01
+		GER = { has_war_with = FRA }
+		GER = { has_war_with = ENG }
+	}
+
+	option = {
+		name = voltabani.1.o1 #Accept
+		declare_war_on = { target = FRA type = annex_everything }
+		puppet = MRK
+		puppet = NUN
+		puppet = BWA
+		puppet = LEL
+		FRA = { create_wargoal = { type = annex_everything target = MRK } }
+		FRA = { create_wargoal = { type = annex_everything target = BOB } }
+		FRA = { create_wargoal = { type = annex_everything target = NUN } }
+		FRA = { create_wargoal = { type = annex_everything target = BWA } }
+		FRA = { create_wargoal = { type = annex_everything target = LEL } }
+		ai_chance = { factor = 100 }
+	}
+}
+#____________________________________________________________

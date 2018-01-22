@@ -1,0 +1,14 @@
+state={
+	id=800
+	name="STATE_800"
+	manpower = 200000
+	state_category=rural
+	provinces= { 8219 8248 12981 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=KON
+		add_core_of=KON
+		add_core_of=POR
+	}

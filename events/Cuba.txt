@@ -1,0 +1,49 @@
+﻿###########################
+# Cuban Events
+###########################
+
+add_namespace = cuba
+
+country_event = { #War of 1912
+	id = cuba.1
+	title = cuba.1.t
+	desc = cuba.1.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date > 1912.5.01
+		date < 1912.12.01
+		tag = CUB
+	}
+	
+	option = {	#The war has begun
+		name = cuba.1.o1
+				start_civil_war = {
+				ruling_party = democratic
+				ideology = neutrality
+				size = 0.5
+				states = { 797 }
+			}
+	}
+}
+
+country_event = { #American intervention in the War of 1912
+	id = cuba.2
+	title = cuba.2.t
+	desc = cuba.2.d
+
+	fire_only_once = yes
+	
+	trigger = {
+		date < 1912.12.01
+		original_tag = CUB
+		has_government = neutrality
+		has_civil_war = yes
+	}
+	
+	option = {	#The war has begun
+		name = cuba.2.o2
+		declare_war_on = { target = USA type = annex_everything }
+	}
+}

@@ -50,7 +50,7 @@ country_event = { #Ultimatum to Persia
 	option = {	#Death to Russian imperialism!
 		name = persia.2.o2
 		RUS = { declare_war_on = { target = PER } }
-		news_event = { days = 1 id = persia.11 }
+		every_country = { news_event = { days = 1 id = persia.11 } }
 		ai_chance = { factor = 85 }
 	}
 }

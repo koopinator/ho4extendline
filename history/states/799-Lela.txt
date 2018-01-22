@@ -1,0 +1,14 @@
+state={
+	id=799
+	name="STATE_799"
+	manpower = 90000
+	state_category=wasteland
+	provinces= { 1891 1969 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=LEL
+		add_core_of=LEL
+		add_core_of=ENG
+	}

@@ -136,6 +136,11 @@ country_event = { #Ottoman Empire surrenders - Make sure they abide by the treat
 		GRE = {
 		transfer_state = 339
 		}
+
+		ENG = { 
+		transfer_state = 454
+		transfer_state = 455
+		}
 		340 = { set_demilitarized_zone = yes }
 		#Todo: Add states to be transferred
 	}

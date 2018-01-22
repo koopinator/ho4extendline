@@ -9,7 +9,7 @@ state={
 		}
 	history={
 		victory_points={ 4111 3 }
-		owner=TUR
+		owner=DRZ
 		add_core_of=SYR	
 		add_core_of=TUR
 		1919.1.1={ 
