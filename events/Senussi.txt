@@ -1,0 +1,37 @@
+﻿
+add_namespace = senussi
+
+
+# When italy goes to war witht he senussi and gains more than 25
+#____________________________________________________________
+country_event = {
+	id = senussi.1
+	title = senussi.1.t
+	desc = senussi.1.d
+
+	trigger = {
+		tag = ITA
+		date < 1920.1.01
+		LBA = { surrender_progress > 0.25 }
+		has_war_with = LBA
+	}
+
+	option = {
+		name = senussi.1.o1 #They are routed - for now
+		white_peace = LBA
+		ITA = { country_event = { days = 35 id = senussi.2 } }
+	}
+}
+
+country_event = { #And they're back lol
+	id = senussi.2
+	title = senussi.2.t
+	desc = senussi.2.d
+	is_triggered_only = yes
+	
+	option = {	
+		name = zaya.2.o1
+		LBA = { declare_war_on = { target = ITA type = annex_everything } }
+			}
+		}
+#____________________________________________________________

@@ -1364,7 +1364,7 @@ focus = {
 
 	focus = {
 		id = TUR_ww1_support_libya
-		prerequisite = { focus= TUR_ww1_war_yemen focus= TUR_ww1_free_yemen}
+		prerequisite = { focus= TUR_ww1_assert_position_east }
 		icon = GFX_hoi4tgw_islam
 
 		available = {
@@ -1396,8 +1396,8 @@ focus = {
 
 		ai_will_do = { factor = 0 }
 		cost = 10
-		x = 15
-		y = 6
+		x = 18
+		y = 2
 	}
 
 	focus = {
@@ -1471,165 +1471,6 @@ focus = {
 	#}
 
 	#-----------------------------------------------------------------------
-
-	focus = {
-		id = TUR_ww1_friend_jabal
-		prerequisite = { focus=TUR_ww1_assert_position_east }
-		icon = GFX_goal_tripartite_pact
-
-		available = {
-
-			country_exists=JBS
-
-		}
-
-		completion_reward = {
-			add_political_power=10
-
-			add_opinion_modifier = { 
-			target = JBS
-			modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-
-		ai_will_do = { factor = 10 }
-		cost = 10
-		x = 18
-		y = 2
-	}
-
-
-	focus = {
-		id = TUR_ww1_fight_saud
-		prerequisite = { focus=TUR_ww1_friend_jabal }
-
-		icon = GFX_goal_generic_military_deal
-
-		available = {
-
-			country_exists=SAU
-
-		}
-
-		completion_reward = {
-			create_wargoal={
-						type=annex_everything target=SAU
-			}
-		}
-
-		ai_will_do = { factor = 0 }
-		cost = 10
-		x = 18
-		y = 3
-	}
-
-	focus = {
-		id = TUR_ww1_annex_jabal
-		prerequisite = { focus=TUR_ww1_fight_saud }
-		icon = GFX_goal_generic_forceful_treaty
-
-		available = {
-			country_exists=JBS
-			JBS = {
-				controls_state = 765
-			}
-
-		}
-		completion_reward = {
-			TUR = {
-				annex_country = {
-					target = JBS
-					transfer_troops = yes
-				}
-			}
-		}
-		ai_will_do = { factor = 0 }
-		cost = 10
-		x = 18
-		y = 4
-	}
-
-	focus = {
-		id = TUR_ww1_friend_afghan
-		prerequisite = { focus=TUR_ww1_annex_jabal }
-		icon = GFX_goal_generic_major_alliance 
-
-		available = {
-
-			country_exists=AFG
-
-		}
-
-		completion_reward = {
-			add_political_power=10
-
-			add_opinion_modifier = { 
-			target = AFG
-			modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-
-		ai_will_do = { factor = 0 }
-		cost = 10
-		x = 18
-		y = 5
-	}
-
-	focus = {
-		id = TUR_ww1_anti_persia
-		prerequisite = { focus=TUR_ww1_friend_afghan }
-		icon = GFX_goal_generic_more_territorial_claims
-
-		available = {
-
-			country_exists=PER
-
-		}
-
-		completion_reward = {
-
-			add_opinion_modifier = { 
-			target = PER
-			modifier =  HOI4TGW_Opinion_hostile_diplomatic_relations
-			}
-		}
-
-		ai_will_do = { factor = 0 }
-		cost = 10
-
-		mutually_exclusive = { focus=TUR_ww1_friend_persia }
-
-		x = 17
-		y = 6
-	}
-
-	focus = {
-		id = TUR_ww1_friend_persia
-		prerequisite = { focus=TUR_ww1_friend_afghan }
-		icon = GFX_goal_molotov_ribbentrop_pact
-
-		available = {
-
-			country_exists=PER
-
-		}
-
-		completion_reward = {
-
-			add_opinion_modifier = { 
-			target = PER
-			modifier =  HOI4TGW_Opinion_improved_diplomatic_relations
-			}
-		}
-
-		ai_will_do = { factor = 0 }
-		cost = 10
-
-		mutually_exclusive = { focus=TUR_ww1_anti_persia }
-
-		x = 19
-		y = 6
-	}
 
 
 

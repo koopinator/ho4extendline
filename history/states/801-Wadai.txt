@@ -1,0 +1,15 @@
+state={
+	id=801
+	name="STATE_801"
+	manpower = 50000
+	state_category=rural
+	provinces= { 5084 7919 }
+	resources={
+		wood=2
+		}
+	history={
+		owner=WDD
+		add_core_of=WDD
+		add_core_of=FRA
+		victory_points={ 5084 1 }
+	}

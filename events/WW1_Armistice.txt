@@ -138,10 +138,23 @@ country_event = { #Ottoman Empire surrenders - Make sure they abide by the treat
 		}
 
 		ENG = { 
-		transfer_state = 454
-		transfer_state = 455
+		transfer_state = 454 #British Palestine
+		transfer_state = 455 #British Palestine
+		transfer_state = 793 #British Palestine
+		transfer_state = 675 #Iraq
+		transfer_state = 676 #Iraq
+		transfer_state = 780 #Iraq
+		transfer_state = 779 #Iraq
 		}
 		340 = { set_demilitarized_zone = yes }
+
+		FRA = {
+		transfer_state = 553 #Lebanon
+		transfer_state = 554 #Syria
+		transfer_state = 677 #Syria
+		transfer_state = 680 #Syria
+		transfer_state = 779 #Syria
+		}
 		#Todo: Add states to be transferred
 	}
 }
