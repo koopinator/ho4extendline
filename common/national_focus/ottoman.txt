@@ -1369,7 +1369,7 @@ focus = {
 
 		available = {
 
-			NOT={ country_exists=LBA }
+			country_exists=LBA 
 
 			has_war_with=ITA
 
@@ -1382,6 +1382,7 @@ focus = {
 
 			LBA = {
 				transfer_state = 273
+				load_oob = LBA_1910
 			}
 			LBA={
 				declare_war_on={
@@ -1394,7 +1395,7 @@ focus = {
 
 		}
 
-		ai_will_do = { factor = 0 }
+		ai_will_do = { factor = 100 }
 		cost = 10
 		x = 18
 		y = 2

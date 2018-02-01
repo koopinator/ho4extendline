@@ -348,6 +348,10 @@ MTN = {
 color = rgb { 121 141 224 }
 color_ui = rgb { 133 155 246 }
 }
+GZC = {
+color = rgb { 121 141 224 }
+color_ui = rgb { 133 155 246 }
+}
 ARM = {
 color = rgb { 250 150 0 }
 color_ui = rgb { 255 165 0 }
@@ -399,23 +403,11 @@ FEC = {
 color = rgb { 188 145 94 }
 color_ui = rgb { 207 160 103 }
 }
-ZHC = {
-color = rgb { 188 145 94 }
-color_ui = rgb { 207 160 103 }
-}
 ROC = {
 color = rgb { 255 244 190 }
 color_ui = rgb { 255 255 209 }
 }
-GDC = {
-color = rgb { 255 244 190 }
-color_ui = rgb { 255 255 209 }
-}
 SCC = {
-color = rgb { 255 244 190 }
-color_ui = rgb { 255 255 209 }
-}
-GZC = {
 color = rgb { 255 244 190 }
 color_ui = rgb { 255 255 209 }
 }

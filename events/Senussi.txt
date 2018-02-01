@@ -30,8 +30,25 @@ country_event = { #And they're back lol
 	is_triggered_only = yes
 	
 	option = {	
-		name = zaya.2.o1
+		name = senussi.2.o1
 		LBA = { declare_war_on = { target = ITA type = annex_everything } }
+		LBA = { country_event = { days = 1 id = senussi.3 } }
+			}
+		}
+
+country_event = { #If they don't have enough units, They will make new ones
+	id = senussi.3
+	title = senussi.3.t
+	desc = senussi.3.d
+	is_triggered_only = yes
+
+	trigger = { 
+	num_divisions < 10
+	}
+	
+	option = {	
+		name = zaya.2.o1
+		LBA = { load_oob = LBA_1910 }
 			}
 		}
 #____________________________________________________________

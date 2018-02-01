@@ -247,7 +247,6 @@ news_event = { #Russo Iranian war News flash
 	id = persia.11
 	title = persia.11.t
 	desc = persia.11.d
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	major = yes
