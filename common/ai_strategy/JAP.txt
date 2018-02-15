@@ -1,0 +1,52 @@
+only_care_about_asia = {
+	enable = {
+		original_tag = JAP
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -3000
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 400
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = 800
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = middle_east
+		value = -3000
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = africa
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = pacific
+		value = 500
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = 500
+	}
+}

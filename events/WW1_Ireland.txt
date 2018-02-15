@@ -10,7 +10,7 @@ country_event = { #Easter rising
 	fire_only_once = yes
 	
 	trigger = {
-		date > 1916.4.024
+		date > 1916.4.24
 		date < 1919.12.01
 		IRE = { exists = no }
 		tag = ENG
@@ -26,7 +26,7 @@ country_event = { #Easter rising
 	}
 }
 
-country_event = { #Spread pt 1
+country_event = { #Irish unification
 	id = ww1_ireland.2
 	title = ww1_ireland.2.t
 	desc = ww1_ireland.2.d
@@ -35,14 +35,25 @@ country_event = { #Spread pt 1
 	hidden = yes
 	
 	trigger = {
-		date > 1916.4.024
+		date > 1916.4.24
 		date < 1919.12.01
-		IRE = { has_full_control_of_state = 134 }
+		IRE = { 
+		has_full_control_of_state = 134 
+		has_full_control_of_state = 113 
+		has_full_control_of_state = 135
+		has_full_control_of_state = 119 }
 	}
 	
 	option = {	#It begins
 		name = ww1_ireland.2.o1
-		IRE = { transfer_state = 134 }
+		IRE = { 
+		transfer_state = 134 
+		transfer_state = 135 
+		transfer_state = 119
+		add_state_core = 134
+		add_state_core = 113
+		add_state_core = 135
+		add_state_core = 119 }
 	}
 }
 
@@ -53,9 +64,10 @@ country_event = { #Spread pt 2
 
 	fire_only_once = yes
 	hidden = yes
+	is_triggered_only = yes
 	
 	trigger = {
-		date > 1916.4.024
+		date > 1916.4.24
 		date < 1919.12.01
 		IRE = { has_full_control_of_state = 135 }
 	}
@@ -73,9 +85,10 @@ country_event = { #Spread pt 3
 
 	fire_only_once = yes
 	hidden = yes
+	is_triggered_only = yes
 	
 	trigger = {
-		date > 1916.4.024
+		date > 1916.4.24
 		date < 1919.12.01
 		IRE = { has_full_control_of_state = 119 }
 	}

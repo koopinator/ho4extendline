@@ -339,6 +339,11 @@ country_event = {
 		days = 1
 	}
 
+	trigger = {
+	date < 1915.1.1
+	#Dunno why this is neccesary, But apparently germany would sometimes re-activate the schlieffen plan after it had already surrendered.
+	}
+
 	immediate = {
 		# Dirty fix
 		hidden_effect = {

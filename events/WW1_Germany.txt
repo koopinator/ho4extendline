@@ -280,4 +280,49 @@ country_event = {
 		set_global_flag = interwar_hitler_putsch_fail
 	}
 }
+
+#German civil war
+country_event = {
+	id =  ww1_germany.24
+	title = ww1_germany.24.t
+	desc = ww1_germany.24.d
+	picture = GFX_report_event_gathering_protest
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.24.a
+		GER = { country_event = { days = 2 id = ww1_germany.25 } }
+}
+}
+
+#German civil war
+country_event = {
+	id =  ww1_germany.25
+	title = ww1_germany.25.t
+	desc = ww1_germany.25.d
+	picture = GFX_report_event_gathering_protest
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ww1_germany.25.a
+		load_oob = GER_1920
+		declare_war_on = { target = BAV type = annex_everything }
+		DDR = { 
+		transfer_state = 56
+		transfer_state = 58
+		transfer_state = 59
+		add_state_core = 56
+		add_state_core = 58
+		add_state_core = 59
+		load_oob = DDR_1920
+		add_to_war = { targeted_alliance = BAV enemy = GER } }
+}
+}
+
+}
 #____________________________________________________________

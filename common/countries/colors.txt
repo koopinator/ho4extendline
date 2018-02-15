@@ -28,6 +28,10 @@ LUX = {
 	color = rgb { 65 175 179 }
 	color_ui = rgb { 85 228 233 }
 }
+TCS = {
+	color = rgb { 30 150 200 }
+	color_ui = rgb { 40 150 120 }
+}
 BEL = { color 	 = rgb { 193 171 8  }
 		color_ui = rgb { 251 222 10 }
 	  }
@@ -58,6 +62,10 @@ LAT = {
 	color_ui = rgb { 124 125 184 }
 }
 SPR = {
+	color = rgb { 242 205 94 }
+	color_ui = rgb { 255 255 122 }
+}
+PNT = {
 	color = rgb { 242 205 94 }
 	color_ui = rgb { 255 255 122 }
 }

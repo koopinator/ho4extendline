@@ -1819,7 +1819,7 @@
  #Kongo Revolt
 
  kongo.1.t:0 "Kongo Revolt"
- kongo.1.d:0 "With Portugal on the verge of joining the allies, Various German officials have stated their willingness to back a Kongolese revolt against Portugal. Our people, as well as the Kongolese elite are clearly unsatisfied with Portugese rule. /n /n /n However, We must be wary when making such a decision. Although we know the position of various german officials, We aren't certain wether or not Germany would back such a revolt, As that may risk portugal's early entry into the war. It might also make us lose what little independence we still have."
+ kongo.1.d:0 "With Portugal on the verge of joining the allies, Various German officials have stated their willingness to back a Kongolese revolt against Portugal. Our people, as well as the Kongolese elite are clearly unsatisfied with Portugese rule. However, We must be wary when making such a decision. Although we know the position of various german officials, We aren't certain wether or not Germany would back such a revolt, As that may risk portugal's early entry into the war. It might also make us lose what little independence we still have."
  kongo.1.o1:0 "We should revolt"
  kongo.1.o2:0 "We should not revolt"
  kongo.2.t:0 "Kongo Revolt"
@@ -1833,3 +1833,11 @@
  kongo.4.t:0 "Annexation bill"
  kongo.4.d:0 "To our dismay, Portugal has decided to put an end to the Kingdom of Kongo in response to our rebellious behavior. If only germany had supported us - If only."
  kongo.4.o1:0 "The Kingdom has ended."
+ kongo.5.t:0 "Proposal to join the central powers."
+ kongo.5.d:0 "With our rebellion against the portugese in full swing, Germany has become more and more interested in Kongolese accession to the central powers. Should we send an official request to join them?"
+ kongo.5.o1:0 "Yes"
+ kongo.5.o2:0 "No"
+ kongo.6.t:0 "Kongo requests to join the central powers"
+ kongo.6.d:0 "The Kingdom of Kongo is currently at war with Portugal, Thanks to our aid. Now that Portugal has finally entered the Entente, The Kongolese seek to respond by entering the central powers. Should we let them?"
+ kongo.6.o1:0 "Yes"
+ kongo.6.o2:0 "No"

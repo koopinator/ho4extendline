@@ -1,0 +1,44 @@
+﻿###################################################################
+division_template = {
+	name = "Cavalry"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+###################################################################
+
+instant_effect = {
+	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "DAR" } requested_factories = 1 progress = 0.5 efficiency = 50}
+}
+
+###################################################################
+
+units = {
+division= { 
+name = "Cavalry"
+location = 8052
+division_template="Cavalry"
+start_experience_factor=0.1
+}
+division= { 
+name = "Cavalry"
+location = 8052
+division_template="Cavalry"
+start_experience_factor=0.1
+}
+division= { 
+name = "Cavalry"
+location = 8052
+division_template="Cavalry"
+start_experience_factor=0.1
+}
+	}
+
+###################################################################

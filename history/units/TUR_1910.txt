@@ -301,8 +301,110 @@ units = {
 	}
 	
 	division = {
-	    name = "8. Tüfek Alayi"
-	    location = 4111# Damascus
+	    name = "Tüfek Alayi"
+	    location = 792
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 11919
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1065
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 7170
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 7001
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1544
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 4440
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 10383
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 12442
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1056
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 10087
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1108
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 4440
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 10383
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 12442
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1056
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 10087
+	    division_template = "Jandarma Alayı"
+	    start_experience_factor = 0
+	}
+	division = {
+	    name = "Tüfek Alayi"
+	    location = 1108
 	    division_template = "Jandarma Alayı"
 	    start_experience_factor = 0
 	}

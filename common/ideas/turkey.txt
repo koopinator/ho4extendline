@@ -1,4 +1,52 @@
 ideas={
+	country = {
+
+
+	TUR_first_balkan_war = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = 2.0
+				defence = -0.5
+				army_defence_factor = -0.5
+				army_attack_factor = 2.0
+			}
+		}
+
+
+	constitutional_protection_war = {
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ai_focus_aggressive_factor = 2.0
+				offence = -0.8
+				defence = -0.8
+				army_defence_factor = -0.98
+				army_attack_factor = -0.98
+				land_reinforce_rate = -0.95
+				attrition = 0.95
+				army_speed_factor = -0.8
+			}
+		}
+} 
 	political_advisor={
 			TUR_ahmed_nessimy={ allowed={ tag=TUR } traits={ ideological_crusader } ai_will_do={ factor=1 } }
 			TUR_ahmed_tevfik={ allowed={ tag=TUR } traits={ silent_workhorse } ai_will_do={ factor=1 } }

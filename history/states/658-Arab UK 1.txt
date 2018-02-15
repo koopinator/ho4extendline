@@ -9,9 +9,9 @@ state={
 		}
 	history={
 		victory_points={ 7960 1 }
-		owner=ENG
+		owner=TCS
 		1936.1.1={ 
-			owner=ENG
+			owner=TCS
 			victory_points={ 7960 1 }
 			buildings={
 				infrastructure=2

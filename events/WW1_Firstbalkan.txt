@@ -135,6 +135,9 @@ country_event = {
 			    }
 			}
 		}
+		TUR = { 
+		add_timed_idea = { idea = TUR_first_balkan_war days = 200 }
+		}
 
 		hidden_effect = {
 			SER = {

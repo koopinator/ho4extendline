@@ -18,12 +18,12 @@ country_event = {
 		}
 	option={
 		name=ww1_brazil.1.a
-				start_civil_war = {
-				ruling_party = neutrality
-				ideology = democratic
-				size = 0.4
-				states = { 502 503  }
-			}
-		add_political_power=-25
+		CDO = { 
+		transfer_state = 502
+		transfer_state = 503
+		add_state_core = 502
+		add_state_core = 503
+		load_oob = CDO_1910 }
+		declare_war_on = { target = CDO type = annex_everything }
 		}
 	}

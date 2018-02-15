@@ -1,0 +1,16 @@
+state={
+	id=802
+	name="STATE_802"
+	manpower = 573000
+	state_category=rural
+	provinces= { 1304 1316 4279 12129 }
+	resources={
+		wood=0
+		oil=5
+		rubber=13
+		}
+
+	history={
+		owner=PNT
+		add_core_of=PNT
+	}

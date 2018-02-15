@@ -1,0 +1,30 @@
+﻿###########################
+# Cuban Events
+###########################
+
+add_namespace = ww1cheats
+
+country_event = { #Buffs and Debuffs
+	id = ww1cheats.1
+	title = ww1cheats.1.t
+	desc = ww1cheats.1.d
+
+	is_triggered_only = yes
+	
+	option = {	#Buff player's nation for 1750 days
+		name = ww1cheats.1.o1
+		add_timed_idea = { idea = national_protection_war days = 1750 }
+	}
+	option = {	#Debuff player's nation for 1750 days
+		name = ww1cheats.1.o2
+		add_timed_idea = { idea = constitutional_protection_war days = 1750 }
+	}
+	option = {	#Buff player's nation for 9999 days
+		name = ww1cheats.1.o3
+		add_timed_idea = { idea = national_protection_war days = 9999 }
+	}
+	option = {	#Debuff player's nation for 9999 days
+		name = ww1cheats.1.o4
+		add_timed_idea = { idea = constitutional_protection_war days = 9999 }
+	}
+}

@@ -248,6 +248,7 @@ news_event = { #Russo Iranian war News flash
 	title = persia.11.t
 	desc = persia.11.d
 	is_triggered_only = yes
+	picture = ww1_russia_9
 
 	major = yes
 	

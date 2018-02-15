@@ -22,21 +22,24 @@ country_event = { #Yuan shikai's coup
 		add_popularity = { ideology = fascism popularity = 0.6 }
 		set_politics = { ruling_party = fascism elections_allowed = no }
 		country_event = { days = 13 id = protectionwar.2 }
+		set_national_unity = 0.45
 		ai_chance = { factor = 80 }
 	}
 
-	option = {	#Execute this traitor!
-		name = protectionwar.1.o2
-		ai_chance = { factor = 10 }
-
-		#Little bit of alternate history. In real life, The restoration amounted to nothing. It is perfectly ok for it to be skipped.
-	}
+#	option = {	#Execute this traitor!
+#		name = protectionwar.1.o2
+#		ai_chance = { factor = 0 }
+#		set_national_unity = 0.45
+#
+#		#Little bit of alternate history. In real life, The restoration amounted to nothing. It is perfectly ok for it to be skipped. UPDATE 2 FEB 2017 the restoration ended up destablizing china giving way to the warlord era
+#	}
 
 	option = {	#Ignore him.
 		name = protectionwar.1.o3
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 20 }
 		add_popularity = { ideology = fascism popularity = 0.3 }
 		country_event = { days = 13 id = protectionwar.4 }
+		set_national_unity = 0.45
 	}
 }
 	
@@ -71,6 +74,7 @@ country_event = { #Democrats get super strong
 		original_tag = QIN
 		has_government = democratic
 		has_civil_war = yes
+		NOT = { owns_state = 332 }
 	}
 	
 	option = {	#The war has begun
@@ -206,6 +210,10 @@ country_event = { #Alright bois, We're in the warlord era now, Yay!
 		transfer_state = 617
 		transfer_state = 618
 		transfer_state = 287
+		add_state_core = 619
+		add_state_core = 617
+		add_state_core = 618
+		add_state_core = 287
 		}
 		FEC = { 
 		transfer_state = 716
@@ -214,24 +222,38 @@ country_event = { #Alright bois, We're in the warlord era now, Yay!
 		transfer_state = 714
 		transfer_state = 715
 		transfer_state = 610
+		add_state_core = 716
+		add_state_core = 328
+		add_state_core = 717
+		add_state_core = 714
+		add_state_core = 715
+		add_state_core = 610
 		}	
 		YUN = { 
 		transfer_state = 325
+		add_state_core = 325
 		}
 		GZC = { 
 		transfer_state = 603
+		add_state_core = 603
 		}
 		GDC = { 
 		transfer_state = 594
 		transfer_state = 593
 		transfer_state = 592
 		transfer_state = 591
+		add_state_core = 594
+		add_state_core = 593
+		add_state_core = 592
+		add_state_core = 591
 		}
 		GXC = { 
 		transfer_state = 599
+		add_state_core = 599
 		}
 		SHX = { 
 		transfer_state = 615
+		add_state_core = 615
 		}
 		ZHC = { 
 		transfer_state = 598
@@ -241,6 +263,13 @@ country_event = { #Alright bois, We're in the warlord era now, Yay!
 		transfer_state = 614
 		transfer_state = 602
 		transfer_state = 620
+		add_state_core = 598
+		add_state_core = 609
+		add_state_core = 608
+		add_state_core = 613
+		add_state_core = 614
+		add_state_core = 602
+		add_state_core = 620
 		}
 		ANH = { 
 		transfer_state = 597
@@ -249,6 +278,244 @@ country_event = { #Alright bois, We're in the warlord era now, Yay!
 		transfer_state = 596
 		transfer_state = 595
 		transfer_state = 600
+		add_state_core = 597
+		add_state_core = 607
+		add_state_core = 606
+		add_state_core = 596
+		add_state_core = 595
+		add_state_core = 600
+		}
+		country_event = { days = 5 id = protectionwar.15 }
+	}
+}
+
+country_event = { #Chinese soldiers defect to the warlords
+	id = protectionwar.9
+	title = protectionwar.9.t
+	desc = protectionwar.9.d
+	is_triggered_only = yes
+	
+	option = {	#The war has begun
+		name = protectionwar.9.o1
+		ROC = {
+		transfer_state = 601
+		transfer_state = 605
+		transfer_state = 283
+		transfer_state = 622
+		transfer_state = 621
+		transfer_state = 611
+		transfer_state = 612
+		transfer_state = 616
+		add_state_core = 601
+		add_state_core = 605
+		add_state_core = 283
+		add_state_core = 622
+		add_state_core = 621
+		add_state_core = 611
+		add_state_core = 612
+		add_state_core = 616
 		}
 	}
+}
+
+country_event = { #Yunnan Expansion part 1
+	id = protectionwar.10
+	title = protectionwar.10.t
+	desc = protectionwar.10.d
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+	tag = YUN
+	country_exists = YUN
+	country_exists = GZC
+	date < 1919.1.1
+	}
+	
+	option = {	#The war will start
+		name = protectionwar.10.o1
+		country_event = { days = 333 id = protectionwar.11 }
+	}
+}
+
+country_event = { #Yunnan Expansion part 2
+	id = protectionwar.11
+	title = protectionwar.11.t
+	desc = protectionwar.11.d
+	is_triggered_only = yes
+
+	trigger = {
+	tag = YUN
+	country_exists = YUN
+	QIN = { exists = no }
+	country_exists = GZC
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.11.o1
+		declare_war_on = { target = GZC type = annex_everything }
+	}
+}
+
+country_event = { #Manchu restoration
+	id = protectionwar.12
+	title = protectionwar.12.t
+	desc = protectionwar.12.d
+	fire_only_once = yes
+
+	trigger = {
+	tag = FEC
+	date > 1917.7.1
+	date < 1917.7.28
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.12.o1
+		QIN = { 
+		transfer_state = 608
+		transfer_state = 609
+		 }
+		QIN = { load_oob = QIN_1917 }
+		QIN = { 		add_popularity = { ideology = neutrality popularity = 1.0 }
+		set_politics = { ruling_party = neutrality elections_allowed = no } }
+		declare_war_on = { target = QIN type = annex_everything }
+		add_state_core = 608
+		add_state_core = 609
+	}
+}
+
+country_event = { #Manchu restoration - Anhui joins the war
+	id = protectionwar.13
+	title = protectionwar.13.t
+	desc = protectionwar.13.d
+	fire_only_once = yes
+
+	trigger = {
+	tag = ANH
+	FEC = { has_war_with = QIN }
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.13.o1
+		add_to_war = { targeted_alliance = FEC enemy = QIN }
+		add_state_core = 608
+		add_state_core = 609
+	}
+}
+
+country_event = { #Manchu restoration - Zhili joins the war
+	id = protectionwar.14
+	title = protectionwar.14.t
+	desc = protectionwar.14.d
+	fire_only_once = yes
+
+	trigger = {
+	tag = ZHC
+	ANH = { has_war_with = QIN }
+	}
+	
+	option = {	#The war has begun
+		name = protectionwar.14.o1
+		add_to_war = { targeted_alliance = FEC enemy = QIN }
+			add_state_core = 608
+			add_state_core = 609
+	}
+}
+
+country_event = { #Constitutional Protection War
+	id = protectionwar.15
+	title = protectionwar.15.t
+	desc = protectionwar.15.d
+	is_triggered_only = yes
+
+	trigger = {
+	original_tag = QIN
+	num_divisions > 1
+	country_exists = YUN
+	country_exists = FEC
+	country_exists = ZHC
+	country_exists = ANH
+	date < 1920.1.1
+	has_war = no
+	}
+	
+	option = {	#Fight these darned warlords!
+		name = protectionwar.15.o1
+		add_ideas = constitutional_protection_war
+		remove_ideas = national_protection_war
+		puppet = GDC
+		declare_war_on = { target = FEC type = annex_everything }
+		declare_war_on = { target = ZHC type = annex_everything }
+		declare_war_on = { target = ANH type = annex_everything }
+		SIK = { 
+		load_oob = SIK_1916
+		}
+		FEC = { 
+		load_oob = FEC_1916
+		}	
+		YUN = { 
+		load_oob = YUN_1916
+		}
+		GZC = { 
+		load_oob = GZC_1916
+		}
+		GDC = { 
+		load_oob = GDC_1916
+		}
+		GXC = { 
+		load_oob = GXC_1916
+		}
+		SHX = { 
+		load_oob = SHX_1916
+		}
+		ZHC = { 
+		load_oob = ZHC_1916
+		}
+		ANH = { 
+		load_oob = ANH_1916
+		}
+	}
+
+}
+
+country_event = { #Qing disbanded
+	id = protectionwar.16
+	title = protectionwar.16.t
+	desc = protectionwar.16.d
+	fire_only_once = yes
+
+	trigger = {
+	original_tag = QIN
+	num_divisions < 1
+	country_exists = YUN
+	country_exists = FEC
+	country_exists = ZHC
+	country_exists = ANH
+	date < 1920.1.1
+	}
+	
+	option = {	#rip
+		name = protectionwar.16.o1
+		ROC = {
+		transfer_state = 601
+		transfer_state = 605
+		transfer_state = 283
+		transfer_state = 622
+		transfer_state = 621
+		transfer_state = 611
+		transfer_state = 612
+		transfer_state = 616
+		transfer_state = 604
+		add_state_core = 604
+		add_state_core = 601
+		add_state_core = 605
+		add_state_core = 283
+		add_state_core = 622
+		add_state_core = 621
+		add_state_core = 611
+		add_state_core = 612
+		add_state_core = 616
+		}
+	}
+
 }

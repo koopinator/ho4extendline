@@ -111,7 +111,7 @@ set_convoys=10
 		#KiS #tech_signal_company=1
 		} }
 create_country_leader={ name = "Józef Pilsudski" desc=POL_jozef_pilsudski_DESC picture="gfx/leaders/POL_jozef_pilsudski.dds" expire="1935.1.1" ideology=liberalism  traits={  } }
-create_country_leader={ name = "Jan Kucharzewski" desc=POL_jozef_pilsudski_DESC picture="gfx/leaders/POL_jozef_pilsudski.dds" expire="1952.1.1" ideology=despotism  traits={ anti_communist } }
+create_country_leader={ name = "Jan Kucharzewski" desc=POL_Kucharzewski_DESC picture="gfx/leaders/POL/country_leaders/POL_Jan_Kucharzewski.dds" expire="1952.1.1" ideology=national_democrat  traits={ anti_communist } }
 create_corps_commander={  name = "Haller de Hallenburg" id=69002 portrait_path="gfx/generals/POL_haller_de_hallenburg.tga" traits={  old_guard } skill=1 }
 create_corps_commander={  name = "Osinski" id=69003 portrait_path="gfx/generals/POL_osinski.tga" traits={  old_guard } skill=1 }
 create_corps_commander={  name = "Romer" id=69004 portrait_path="gfx/generals/POL_romer.tga" traits={   } skill=1 }

@@ -6,6 +6,29 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_align_to_britain"
+		texturefile = "gfx/interface/goals/align_to_britain.dds"
+	}
+	spriteType = {
+		name = "GFX_align_to_france"
+		texturefile = "gfx/interface/goals/align_to_france.dds"
+	}
+	spriteType = {
+		name = "GFX_align_to_turkey"
+		texturefile = "gfx/interface/goals/align_to_turkey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_align_to_german_empire"
+		texturefile = "gfx/interface/goals/align_to_german_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_attack_britain"
+		texturefile = "gfx/interface/goals/attack_britain.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_AUH_ww1_Multinational_State"
 		texturefile = "gfx/hoi4tgw_national_spirit/AUH_multinational_state.dds"
 	}

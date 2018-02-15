@@ -145,6 +145,7 @@ country_event = { #Ottoman Empire surrenders - Make sure they abide by the treat
 		transfer_state = 676 #Iraq
 		transfer_state = 780 #Iraq
 		transfer_state = 779 #Iraq
+		transfer_state = 291 #Iraq
 		}
 		340 = { set_demilitarized_zone = yes }
 
@@ -154,6 +155,10 @@ country_event = { #Ottoman Empire surrenders - Make sure they abide by the treat
 		transfer_state = 677 #Syria
 		transfer_state = 680 #Syria
 		transfer_state = 779 #Syria
+		}
+
+		HJZ = { 
+		transfer_state = 679
 		}
 		#Todo: Add states to be transferred
 	}
