@@ -47,6 +47,7 @@ puppet = NEP
 puppet = BHU
 puppet = EGY
 puppet = TCS
+puppet = CYP
 
 
 

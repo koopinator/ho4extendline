@@ -9,7 +9,8 @@ state={
 		chromium=0
 		}
 	history={
-		owner=ENG
+		owner=CYP
+		add_core_of=CYP
 		add_core_of=ENG
 		add_core_of=TUR
 		1936.1.1={ 

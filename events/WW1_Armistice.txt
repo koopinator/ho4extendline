@@ -27,7 +27,10 @@ country_event = { #Germany surrenders
 		FRA  = { transfer_state = 28 }
 		BAV  = { transfer_state = 54 }
 		BAV  = { transfer_state = 53 }
-		BAV  = { transfer_state = 52 }
+		BAV  = { 
+		transfer_state = 52
+		country_event = { days = 30 id = ww1_germany.24 }
+		}
 		BAV  = { add_popularity = { ideology = communism popularity = 0.8 } }
 		BAV  = { set_politics = { ruling_party = communism elections_allowed = yes } }
 		DEN  = { transfer_state = 751 }
@@ -38,7 +41,6 @@ country_event = { #Germany surrenders
 		end_puppet = LIT
 		end_puppet = EST
 		end_puppet = AUH
-
 	}
 }
 

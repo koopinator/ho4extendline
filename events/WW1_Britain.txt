@@ -211,3 +211,27 @@ country_event = {
 		IRQ = { declare_war_on = { target = ENG type = annex_everything } }
 	}
 }
+
+#Cyprus is annexed
+country_event = {
+	id = ww1_england.23
+	title = ww1_england.23.t
+	desc = ww1_england.23.d
+	
+	fire_only_once=yes
+
+	trigger = {
+	tag = CYP
+	date < 1919.1.1
+	ENG = { has_war_with = ENG  }
+	}
+	
+	option = {
+		name = ww1_england.22.a
+		ENG = { annex_country = { target = CYP } }
+	}
+	option = {
+		name = ww1_england.22.a
+	}
+}
+

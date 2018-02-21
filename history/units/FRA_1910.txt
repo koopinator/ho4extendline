@@ -1157,6 +1157,42 @@ units = {
 			start_equipment_factor = 0.3 
 			start_manpower_factor = 0.3
 			}
+
+	division= { 
+			name = "Troupes Coloniales"
+			location=1473 #Wadai
+			division_template="Troupes Coloniales"
+			start_experience_factor=0.05
+			start_equipment_factor = 0.3 
+			start_manpower_factor = 0.3
+			}
+
+	division= { 
+			name = "Troupes Coloniales"
+			location=3181 #Wadai
+			division_template="Troupes Coloniales"
+			start_experience_factor=0.05
+			start_equipment_factor = 0.3 
+			start_manpower_factor = 0.3
+			}
+
+	division= { 
+			name = "Troupes Coloniales"
+			location=1883 #Wadai
+			division_template="Troupes Coloniales"
+			start_experience_factor=0.05
+			start_equipment_factor = 0.3 
+			start_manpower_factor = 0.3
+			}
+
+	division= { 
+			name = "Troupes Coloniales"
+			location=3165 #Wadai
+			division_template="Troupes Coloniales"
+			start_experience_factor=0.05
+			start_equipment_factor = 0.3 
+			start_manpower_factor = 0.3
+			}
 	
 	
 	division= { 

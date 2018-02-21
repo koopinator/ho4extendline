@@ -35,6 +35,12 @@ units = {
 			division_template="Infantry Brigade"
 			start_experience_factor=0.1
 			}
+	division= { 
+			name = "Infantry Brigade"
+			location=7919
+			division_template="Infantry Brigade"
+			start_experience_factor=0.1
+			}
 	}
 
 ###################################################################

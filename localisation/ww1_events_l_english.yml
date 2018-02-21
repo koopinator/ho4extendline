@@ -1841,3 +1841,29 @@
  kongo.6.d:0 "The Kingdom of Kongo is currently at war with Portugal, Thanks to our aid. Now that Portugal has finally entered the Entente, The Kongolese seek to respond by entering the central powers. Should we let them?"
  kongo.6.o1:0 "Yes"
  kongo.6.o2:0 "No"
+
+ #Unification of Saudi Arabia
+
+ ww1_nejd.1.t:0 "Invasion of Jabal Shammar"
+ ww1_nejd.1.d:0 "Now that the Ottomans have lost control of Hejaz, It seems like the time is right to try and unite Arabia! This would start with an invasion of Jabal Shammar"
+ ww1_nejd.1.o1:0 "Ok"
+ ww1_nejd.2.t:0 "Invasion of Hejaz"
+ ww1_nejd.2.d:0 "We have taken Jabal Shammar and added it to our emirate! Next stop - Hejaz."
+ ww1_nejd.2.o1:0 "Ok"
+ ww1_nejd.3.t:0 "Invasion of Hejaz"
+ ww1_nejd.3.d:0 "The House of Saud has failed to try and take our country. We could unify arabia by invading hejaz!"
+ ww1_nejd.3.o1:0 "Ok"
+ ww1_nejd.4.t:0 "The Unification of Saudi Arabia"
+ ww1_nejd.4.d:0 "We have a substantial amount of territory in Arabia. Let's proclaim Arabia, Even though substantial parts of it remain out of our rule."
+ ww1_nejd.4.o1:0 "Ok"
+ ww1_nejd.5.t:0 "The Unification of Rashidi Arabia"
+ ww1_nejd.5.d:0 "We have a substantial amount of territory in Arabia. Let's proclaim Arabia, Even though substantial parts of it remain out of our rule."
+ ww1_nejd.5.o1:0 "Ok"
+
+
+ #Albions annex cyprus
+
+ ww1_england.23.t:0 "British annexation of Cyprus"
+ ww1_england.23.d:0 "With Turkey's entry into the central powers, Various British Officials have pushed for britain to militarily annex cyprus."
+ ww1_england.23.o1:0 "Long live the Queen"
+ ww1_england.23.o2:0 "That won't be necessary"
